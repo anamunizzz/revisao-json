@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="flex justify-between items-center mx-16 h-20">
+        <div class="flex justify-center items-center gap-16">
+            <a href="../../index.html" class="text-lg font-semibold text-gray-900">Home</a>
+            <a href="./sobre.html" class="text-lg font-semibold text-gray-900">Sobre a empresa</a>
+        </div>
+
+        <nav class="flex justify-center items-center gap-3">
+            <a href="../../src/pages/cadastro.html" class="text-base font-medium text-gray-900">Cadastro</a>
+            <a href="./login.html" class="text-base font-medium text-gray-900">Login</a>
+        </nav>
+    </header>
+
+    <main class="flex items-center justify-center min-h-screen bg-green-500">
+        <div class="bg-white rounded-lg flex w-3/4 p-8">
+            <div class="w-1/2 flex flex-col justify-center">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Cadastro</h2>
+                <form id="cadastroForm" class="flex flex-col gap-4"> <!-- Adicionando id ao formulário -->
+                    <input type="text" id="nome" placeholder="Nome Completo" class="p-3 border rounded-lg">
+                    <input type="email" id="email" placeholder="Email" class="p-3 border rounded-lg">
+                    <input type="text" id="login" placeholder="Login" class="p-3 border rounded-lg">
+                    <input type="password" id="senha" placeholder="Senha" class="p-3 border rounded-lg">
+
+                    <div class="flex gap-4">
+                        <button type="submit" class="bg-green-600 text-white py-2 px-4 rounded-lg">Enviar</button>
+                        <button type="button" id="jaCadastradoBtn"
+                            class="bg-gray-300 text-gray-800 py-2 px-4 rounded-lg">Já Cadastrado</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="w-1/2 flex justify-center items-center ml-16">
+                <img src="../assets/img/img-sobre.png" alt="Imagem ilustrativa" class="w-1/1 rounded-lg">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-green-800 text-white py-4 w-full">
+        <p>&copy; Desenvolvido por Shrek.</p>
+    </footer>
+
+    <script src="../js/cadastro.js"></script> <!-- Certifique-se de que o caminho do arquivo JS esteja correto -->
+</body>
+
+</html>
