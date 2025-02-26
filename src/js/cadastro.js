@@ -1,4 +1,4 @@
-document.getElementById("cadastroForm").addEventListener("submit", function(event) {
+document.getElementById("cadastroForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
     const nome = document.getElementById("nome").value;
@@ -18,10 +18,9 @@ document.getElementById("cadastroForm").addEventListener("submit", function(even
     localStorage.setItem("usuarioCadastrado", JSON.stringify(usuario));
 
     alert("Cadastro realizado com sucesso!");
-    window.location.href = "http://127.0.0.1:5500/index.html"; // Redireciona após o cadastro
 });
 
 // Adicionando o evento de clique para o botão "Já Cadastrado"
-document.getElementById("jaCadastradoBtn").addEventListener("click", function() {
-    window.location.href = "http://127.0.0.1:5500/src/pages/login.html"; // Redireciona para a página de login
+document.getElementById("jaCadastradoBtn").addEventListener("click", function () {
+    alert("Vá para a página de login!");
 });
